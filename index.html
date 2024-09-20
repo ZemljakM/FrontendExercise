@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clubs</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <h1>Clubs</h1>
+    <button onclick="showForm('createClubForm')">Add new club</button>
+    <table id="clubsTable">
+        <tr>
+            <th>Name</th>
+            <th>Sport</th>
+            <th>Date of establishment</th>
+            <th>Number of members</th>
+            <th>President</th>
+            <th></th>
+        </tr>
+    </table>
+
+    <div id="createClubForm" style="display: none;">
+        <form id="createClub">
+            Name: <input type="text" id="addName" name="name" autocomplete="off">
+            Sport: <select name="sport" id="addSport" autocomplete="off">
+                        <option value="Football">Football</option>
+                        <option value="Handball">Handball</option>
+                        <option value="Basketball">Basketball</option>
+                        <option value="Tenis">Tenis</option>
+                        <option value="Other">Other</option>
+                    </select>
+            Date of establishment: <input type="date" name="dateOfEstablishment" id="addDate" autocomplete="off">
+            Number of members: <input type="number" name="members" id="addMembers" autocomplete="off">
+            President: <input type="text" name="president" id="addPresident" autocomplete="off">
+            <button type="submit">Save</button>
+        </form>
+    </div>
+    
+
+
+    <div id="updateClubForm" style="display: none;">
+        <form id="updateClub">
+            Name: <input type="text" id="updateName" name="name">
+            Sport: <select id="updateSport" name="sport">
+                        <option value="Football">Football</option>
+                        <option value="Handball">Handball</option>
+                        <option value="Basketball">Basketball</option>
+                        <option value="Tenis">Tenis</option>
+                        <option value="Other">Other</option>
+                    </select>
+            Date of establishment: <input type="date" name="dateOfEstablishment" id="updateDate">
+            Number of members: <input type="number" name="members" id="updateMembers">
+            President: <input type="text" name="president" id="updatePresident">
+            <button type="submit">Save</button>
+        </form>
+    </div>
+    
+</body>
+</html>

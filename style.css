@@ -1,0 +1,88 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 1em;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+h1 {
+    text-align: left;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+
+#createClubForm, #updateClubForm {
+    width: 70%;
+    margin: 20px auto; 
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+
+button {
+    width: 8em; 
+    background-color: #967aa1; 
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 10px; 
+    text-align: center;
+    font-size: 1rem; 
+    align-self: last baseline;
+}
+
+
+button:hover {
+    background-color: #aaa1c8; 
+}
+
+
+td button {
+    
+    width: 8em; 
+    margin: 0 auto; 
+    font-size: 0.7rem;
+}
